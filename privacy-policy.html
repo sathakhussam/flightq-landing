@@ -1,0 +1,260 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Privacy Policy · ThePilot Technologies</title>
+<meta name="description" content="How ThePilot Technologies collects, uses and protects personal data across all its aviation technology products, including CadetQ, FlightQ and EnggQ." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jost:wght@600&display=swap" />
+<style>
+@font-face { font-family: "Inter Display"; src: url("fonts/inter-display-medium.woff2") format("woff2"); font-weight: 500; font-display: swap; }
+@font-face { font-family: "Inter"; src: url("fonts/inter-regular.woff2") format("woff2"); font-weight: 400; font-display: swap; }
+@font-face { font-family: "Inter"; src: url("fonts/inter-medium.woff2") format("woff2"); font-weight: 500; font-display: swap; }
+:root {
+  --ink: #0B1217; --navy: #1C3867; --sky: #3F85D1; --sky-deep: #286EB9; --wash: #EDF5FE; --slate: #506783; --line: #DCEAFB;
+  --f-mark: "Jost", "Inter", system-ui, sans-serif; --f-display: "Inter Display", "Inter", system-ui, sans-serif; --f-body: "Inter", system-ui, -apple-system, sans-serif;
+}
+* { box-sizing: border-box; }
+html { color-scheme: light; scroll-behavior: smooth; }
+body { margin: 0; background: #F8FBFF; color: var(--ink); font-family: var(--f-body); -webkit-font-smoothing: antialiased; }
+a { color: var(--sky-deep); }
+.top { border-bottom: 1px solid var(--line); background: #fff; }
+.top-in { max-width: 1120px; margin: 0 auto; padding: 18px 24px; display: flex; align-items: center; justify-content: space-between; gap: 16px; }
+.brand { display: inline-grid; gap: 5px; text-decoration: none; }
+.wordmark { font-family: var(--f-mark); font-weight: 600; letter-spacing: -0.02em; line-height: 1; color: #1F3F78; font-size: 26px; }
+.wordmark .q { color: var(--sky); }
+.brand .wordmark { font-size: 22px; }
+.brand .by { font-size: 10.5px; font-weight: 500; letter-spacing: .04em; color: var(--slate); }
+.brand .by b { font-weight: 600; color: var(--navy); }
+.back { font-size: 14px; color: var(--slate); text-decoration: none; }
+.back:hover { color: var(--sky-deep); }
+.wrap { max-width: 1120px; margin: 0 auto; padding: 56px 24px 96px; display: grid; grid-template-columns: 240px minmax(0, 1fr); gap: 64px; align-items: start; }
+.toc { position: sticky; top: 24px; font-size: 13.5px; }
+.toc h2 { font-size: 11.5px; font-weight: 600; letter-spacing: .1em; text-transform: uppercase; color: var(--ink); margin: 0 0 12px; }
+.toc ol { margin: 0; padding: 0 0 0 18px; display: grid; gap: 8px; color: var(--slate); }
+.toc a { color: var(--slate); text-decoration: none; }
+.toc a:hover { color: var(--sky-deep); }
+main { min-width: 0; }
+.draft { border: 1px solid #F3C98F; background: #FDF6EC; color: #7A4A0E; border-radius: 12px; padding: 14px 18px; font-size: 14px; line-height: 1.55; margin-bottom: 36px; }
+.draft b { color: #5C370A; }
+h1 { font-family: var(--f-display); font-weight: 500; font-size: clamp(34px, 4vw, 46px); letter-spacing: -0.02em; margin: 0 0 10px; }
+.meta { color: var(--slate); font-size: 14px; margin: 0 0 28px; }
+.lead { font-size: 18px; line-height: 1.65; color: #26384F; margin: 0 0 12px; }
+section { padding-top: 36px; scroll-margin-top: 16px; }
+h2 { font-family: var(--f-display); font-weight: 500; font-size: 24px; letter-spacing: -0.01em; margin: 0 0 14px; }
+h3 { font-size: 16px; font-weight: 500; margin: 22px 0 8px; }
+p, li { font-size: 15.5px; line-height: 1.7; color: #26384F; }
+p { margin: 0 0 12px; }
+ul { margin: 0 0 12px; padding-left: 20px; }
+li { margin-bottom: 6px; }
+li b, p b { color: var(--ink); font-weight: 500; }
+.ph { background: #FFF1D6; color: #7A4A0E; border-radius: 4px; padding: 0 5px; font-weight: 500; -webkit-box-decoration-break: clone; box-decoration-break: clone; }
+.tbl { width: 100%; border-collapse: collapse; margin: 6px 0 14px; font-size: 14.5px; background: #fff; border: 1px solid var(--line); border-radius: 12px; overflow: hidden; }
+.tbl th { text-align: left; font-weight: 600; font-size: 12px; letter-spacing: .06em; text-transform: uppercase; color: var(--slate); background: var(--wash); padding: 10px 14px; }
+.tbl td { padding: 11px 14px; border-top: 1px solid var(--line); vertical-align: top; line-height: 1.55; color: #26384F; }
+.tbl td:first-child { font-weight: 500; color: var(--ink); white-space: nowrap; }
+.tbl-wrap { overflow-x: auto; }
+.card { background: #fff; border: 1px solid var(--line); border-radius: 12px; padding: 18px 20px; }
+.card p { margin: 0 0 4px; }
+.foot { border-top: 1px solid var(--line); background: #fff; }
+.foot-in { max-width: 1120px; margin: 0 auto; padding: 22px 24px; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 10px 24px; font-size: 13px; color: var(--slate); }
+.foot-in a { color: var(--slate); text-decoration: none; }
+@media (max-width: 860px) { .wrap { grid-template-columns: 1fr; gap: 28px; padding-top: 36px; } .toc { position: static; } }
+@media (max-width: 560px) { .top-in, .wrap, .foot-in { padding-inline: 16px; } .tbl td:first-child { white-space: normal; } }
+</style>
+</head>
+<body>
+
+<header class="top"><div class="top-in">
+  <a href="https://thepilot.tech" class="brand" aria-label="ThePilot Technologies"><span class="wordmark">ThePilot <span class="q">Technologies</span></span><span class="by">Aviation training technology</span></a>
+  <a href="index.html" class="back">← Back to FlightQ</a>
+</div></header>
+
+<div class="wrap">
+  <nav class="toc" aria-label="On this page">
+    <h2>On this page</h2>
+    <ol>
+      <li><a href="#who">Who we are</a></li>
+      <li><a href="#roles">Our role and yours</a></li>
+      <li><a href="#collect">Data we collect</a></li>
+      <li><a href="#use">How we use it</a></li>
+      <li><a href="#share">Who we share it with</a></li>
+      <li><a href="#transfer">Transfers outside India</a></li>
+      <li><a href="#security">Security</a></li>
+      <li><a href="#retention">How long we keep it</a></li>
+      <li><a href="#rights">Your rights</a></li>
+      <li><a href="#children">Children</a></li>
+      <li><a href="#cookies">Cookies</a></li>
+      <li><a href="#grievance">Grievance Officer</a></li>
+      <li><a href="#changes">Changes and contact</a></li>
+    </ol>
+  </nav>
+
+  <main>
+    <div class="draft" role="note"><b>Draft for legal review.</b> Text highlighted <span class="ph">like this</span> needs confirming before publication. This draft follows India's Digital Personal Data Protection Act, 2023, the DPDP Rules, 2025 and the Information Technology Act, 2000. It is not legal advice; have it reviewed by Indian counsel before use.</div>
+
+    <h1>Privacy Policy</h1>
+    <p class="meta">Effective 29 April 2026 · Applies to every ThePilot Technologies aviation product and website, including CadetQ, FlightQ and EnggQ</p>
+    <p class="lead">This policy explains what personal data ThePilot Technologies collects through its websites and products, why, who we share it with, and the rights you have over it. We have written it to be read, not skimmed past.</p>
+
+    <section id="who">
+      <h2>1. Who we are</h2>
+      <p>FlightDeck Aviation LLP, trading as ThePilot Technologies (LLPIN AAO-5090), a limited liability partnership registered in India, with its registered office at 102, B Wing, Poppy CHS, Arham Siddha, Ram Nagar Road, off Haridas Nagar Road, Om Shree Geetanjali Nagar, Saibaba Nagar, Borivali West, Mumbai, Maharashtra 400092, India ("<b>we</b>", "<b>us</b>", "<b>our</b>").</p>
+      <p>We build aviation technology products for airlines, flight training organisations, maintenance and engineering teams, and the people who train and work in them. This one policy covers all of them:</p>
+      <ul>
+        <li><b>Our websites</b>, including thepilot.tech and each product's website (the "<b>Sites</b>").</li>
+        <li><b>Our products</b> (each a "<b>Product</b>"):</li>
+      </ul>
+      <div class="tbl-wrap"><table class="tbl">
+        <thead><tr><th>Product</th><th>What it does</th><th>Who uses it</th></tr></thead>
+        <tbody>
+          <tr><td>CadetQ</td><td>Manages ab initio cadet pilot programmes, from enrollment through ground school, flight training and licence issue.</td><td>Airlines, academies, flight training organisations (FTOs), their staff, instructors and cadets</td></tr>
+          <tr><td>FlightQ</td><td><span class="ph">[one-line description]</span></td><td><span class="ph">[users]</span></td></tr>
+          <tr><td>EnggQ</td><td><span class="ph">[one-line description]</span></td><td><span class="ph">[users]</span></td></tr>
+        </tbody>
+      </table></div>
+      <p>When we launch a new product, we add it to this table. The rest of this policy applies to it unless the table says otherwise.</p>
+    </section>
+
+    <section id="roles">
+      <h2>2. Our role and yours</h2>
+      <p>Under the DPDP Act, the organisation that decides why and how personal data is processed is the <b>Data Fiduciary</b>. An organisation that processes data on its behalf is a <b>Data Processor</b>. Our role depends on where your data comes from.</p>
+      <ul>
+        <li><b>On our Sites, and for our own customer relationships</b> (for example when you request a briefing or write to us), <b>we are the Data Fiduciary</b>.</li>
+        <li><b>Inside a Product</b>, the records are owned and controlled by the organisation that subscribes to it: usually your airline, academy or FTO (the "<b>Customer</b>"). <b>The Customer is the Data Fiduciary and we are its Data Processor.</b> We process that data only on the Customer's instructions and under our contract with them.</li>
+      </ul>
+      <p>If you are a cadet, instructor or staff member using a Product through your organisation, your organisation's privacy notice also applies, and requests about your records should usually go to them first. We will help them respond, and you can always contact us (see <a href="#grievance">section 12</a>).</p>
+    </section>
+
+    <section id="collect">
+      <h2>3. Data we collect</h2>
+      <h3>When you visit our Sites or contact us</h3>
+      <ul>
+        <li><b>Contact and enquiry details:</b> your name, work email, organisation, role and anything you write in a briefing request or email.</li>
+        <li><b>Technical data:</b> IP address, browser and device type, pages visited and the time of your visit, collected through server logs and essential cookies.</li>
+      </ul>
+      <h3>When you use a Product</h3>
+      <ul>
+        <li><b>Account details:</b> name, email address, role, organisation and, if you sign in with Google, your Google profile name and photo. We request only the basic sign-in scopes (openid, email, profile) and never access your Gmail, Drive, Calendar or contacts.</li>
+        <li><b>Training records:</b> enrollment details, batch, ground school and exam results, flight hours and logbook entries (including records synced from your FTO's software), milestones, delays, assessments, instructor ratings and notes, attendance and disciplinary records.</li>
+        <li><b>Identity and compliance documents</b> uploaded by you or your organisation, such as passport and visa details, photographs, medical certificates, licences, regulator reference numbers (for example a DGCA computer number) and signed agreements.</li>
+        <li><b>Communications:</b> messages, comments, tasks and files shared in the Product, including in discussion rooms.</li>
+        <li><b>Activity and security data:</b> sign-ins, the actions you take, and an audit log of changes to records (who changed what, when, the values before and after, and the IP address).</li>
+      </ul>
+      <p>Some of these, such as passport details and medical certificates, are sensitive. We restrict them by role and by batch (section 7). Please upload only what your programme needs.</p>
+    </section>
+
+    <section id="use">
+      <h2>4. How we use it</h2>
+      <p>We process personal data either with your <b>consent</b>, or for a <b>legitimate use</b> permitted by Section 7 of the DPDP Act (for example where you have voluntarily provided data for a specified purpose, or where processing is needed to meet a legal obligation).</p>
+      <div class="tbl-wrap"><table class="tbl">
+        <thead><tr><th>Purpose</th><th>Data used</th><th>Basis</th></tr></thead>
+        <tbody>
+          <tr><td>Responding to enquiries and briefing requests</td><td>Contact and enquiry details</td><td>Consent / voluntarily provided</td></tr>
+          <tr><td>Providing the Product to the Customer</td><td>Account, training, document and communication data</td><td>Customer's instructions (we act as Data Processor)</td></tr>
+          <tr><td>Signing you in and securing accounts</td><td>Account and security data</td><td>Necessary to provide the service</td></tr>
+          <tr><td>Notifications about training, tasks and deadlines</td><td>Account and training data</td><td>Customer's instructions; push notifications only if you opt in</td></tr>
+          <tr><td>Reports, forecasts and AI-assisted features</td><td>Training and document data</td><td>Customer's instructions (see section 5 on AI providers)</td></tr>
+          <tr><td>Preventing abuse, keeping audit trails, meeting legal duties</td><td>Security and activity data</td><td>Legal obligation / legitimate use</td></tr>
+          <tr><td>Improving our Sites and Products</td><td>Technical and usage data, aggregated where possible</td><td>Consent for non-essential analytics</td></tr>
+        </tbody>
+      </table></div>
+      <p>We do <b>not</b> sell personal data, use it for advertising, or use Customer data to train AI models.</p>
+      <p>Where we rely on your consent, you can withdraw it at any time, as easily as you gave it. Withdrawal does not affect processing that already happened.</p>
+    </section>
+
+    <section id="share">
+      <h2>5. Who we share it with</h2>
+      <ul>
+        <li><b>Your organisation and its partners:</b> authorised staff of your airline, academy or FTO see records according to the access they have been given. For example, an FTO's staff see only the batches assigned to them.</li>
+        <li><b>Service providers</b> who host and run our services under contract, and only for that purpose:
+          <ul>
+            <li>Cloud hosting and servers <span class="ph">[provider, location]</span></li>
+            <li>File and document storage: Amazon Web Services (S3) <span class="ph">[region]</span></li>
+            <li>Email delivery: Resend</li>
+            <li>Sign-in: Google (if you choose Google sign-in)</li>
+            <li>AI features: OpenAI <span class="ph">[confirm which features send data, and that zero-retention or no-training terms apply]</span></li>
+            <li>Push notifications through your browser's or device's push service</li>
+          </ul>
+        </li>
+        <li><b>Authorities</b>, when the law requires it, or to protect the rights, safety and security of our users or the public.</li>
+        <li><b>A successor business</b>, if we are involved in a merger, acquisition or sale of assets. This policy, or one at least as protective, will continue to apply.</li>
+      </ul>
+    </section>
+
+    <section id="transfer">
+      <h2>6. Transfers outside India</h2>
+      <p>Some of our service providers process data outside India, for example in the United States. Cadets training at FTOs abroad may also have records created there. Under Section 16 of the DPDP Act, we transfer personal data outside India only to countries the Government of India has not restricted, and only under contracts that require the recipient to protect it.</p>
+    </section>
+
+    <section id="security">
+      <h2>7. Security</h2>
+      <ul>
+        <li>Data is encrypted in transit (HTTPS) and <span class="ph">[at rest: confirm]</span>.</li>
+        <li>Access is controlled by role, and in Products also by batch and organisation, so each person and each FTO sees only what they should.</li>
+        <li>Changes to records are logged in an audit trail.</li>
+        <li>Our staff and service providers are bound by confidentiality obligations.</li>
+      </ul>
+      <p>If a personal data breach occurs, we will inform the Data Protection Board of India and affected individuals as the DPDP Act and Rules require. Where we are a Customer's Data Processor, we will notify the Customer without delay so it can meet its own obligations.</p>
+    </section>
+
+    <section id="retention">
+      <h2>8. How long we keep it</h2>
+      <ul>
+        <li><b>Enquiries:</b> for as long as the conversation is active, then up to <span class="ph">[24 months]</span>.</li>
+        <li><b>Product data:</b> for the duration of the Customer's contract. At the end, it is returned or deleted as the Customer instructs, and deleted from backups within <span class="ph">[90 days]</span>.</li>
+        <li><b>Logs and audit trails:</b> at least one year, as the DPDP Rules require, and longer where needed for security or legal reasons.</li>
+      </ul>
+      <p>We erase personal data once its purpose is served, unless the law requires us to keep it.</p>
+    </section>
+
+    <section id="rights">
+      <h2>9. Your rights</h2>
+      <p>Under the DPDP Act you have the right to:</p>
+      <ul>
+        <li><b>Access:</b> a summary of the personal data we process about you and how we process it.</li>
+        <li><b>Correction and erasure:</b> to correct, complete or update your data, or to have it erased when it is no longer needed.</li>
+        <li><b>Withdraw consent</b> where we rely on it.</li>
+        <li><b>Grievance redressal:</b> to complain to us and get a response.</li>
+        <li><b>Nominate</b> someone to exercise your rights if you die or become incapacitated.</li>
+      </ul>
+      <p>To use these rights, write to our Grievance Officer (<a href="#grievance">section 12</a>). We will verify your identity and reply within the time the law sets, and in any case within 90 days. For data inside a Product, we may pass your request to your organisation, which decides on it as the Data Fiduciary, and help it respond.</p>
+    </section>
+
+    <section id="children">
+      <h2>10. Children</h2>
+      <p>Under Indian law a child is anyone under 18. Our Products are designed for adult cadets, staff and instructors. If a Customer enrols anyone under 18, the Customer must obtain verifiable consent from a parent or lawful guardian before that person's data is entered, and we will not track, behaviourally monitor or target advertising at them. Our Sites are not directed at children.</p>
+    </section>
+
+    <section id="cookies">
+      <h2>11. Cookies</h2>
+      <p>We use <b>essential cookies</b> to keep you signed in and to secure our services. They cannot be switched off. <span class="ph">[If analytics is added: we use (tool) only with your consent, which you can change at any time from the cookie settings link in our footer.]</span></p>
+    </section>
+
+    <section id="grievance">
+      <h2>12. Grievance Officer and contact</h2>
+      <div class="card">
+        <p><b><span class="ph">[Name]</span></b>, Grievance Officer</p>
+        <p>FlightDeck Aviation LLP (ThePilot Technologies), 102, B Wing, Poppy CHS, Arham Siddha, Ram Nagar Road, off Haridas Nagar Road, Om Shree Geetanjali Nagar, Saibaba Nagar, Borivali West, Mumbai, Maharashtra 400092, India</p>
+        <p>Email: <a href="mailto:privacy@thepilot.tech"><span class="ph">privacy@thepilot.tech</span></a></p>
+      </div>
+      <p style="margin-top:12px">We will acknowledge your complaint promptly and resolve it within the time the law sets. If you are not satisfied, you may complain to the <b>Data Protection Board of India</b> after using our grievance process.</p>
+    </section>
+
+    <section id="changes">
+      <h2>13. Changes to this policy</h2>
+      <p>We will update this policy as our products and the law change. When we do, we will change the effective date above. For material changes, we will also notify Customers and, where we hold your contact details, you, before the change takes effect.</p>
+      <p>This policy is governed by the laws of India. General questions: <a href="mailto:support@thepilot.in">support@thepilot.in</a> · <a href="https://thepilot.tech" target="_blank" rel="noopener">thepilot.tech</a></p>
+    </section>
+  </main>
+</div>
+
+<footer class="foot"><div class="foot-in">
+  <span>© 2026 ThePilot Technologies. All rights reserved.</span>
+  <span><a href="terms.html">Website terms</a> · <a href="https://thepilot.tech" target="_blank" rel="noopener">thepilot.tech</a> · <a href="index.html">FlightQ</a></span>
+</div></footer>
+
+</body>
+</html>
